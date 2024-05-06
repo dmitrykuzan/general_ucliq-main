@@ -1,0 +1,41 @@
+.thanks {
+    &__content {
+        padding: 3rem;
+        width: 100%;
+        max-width: 60rem;
+        background-color: var(--clr-default-100);
+    }
+
+    .modal__content {
+        background-color: var(--clr-default-100);
+
+        @media (max-width: em(575)) {
+            padding: 2rem;
+        }
+    }
+
+    &__title {
+        padding-bottom: 1.5rem;
+        font-size: fluid-font(3.4rem, 2.4rem);
+        text-align: center;
+        @media (max-width: em(575)) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__subtitle {
+        line-height: 150%;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .modal__close {
+        &::after,
+        &::before {
+            content: "";
+            background-color: var(--clr-default-900);
+        }
+    }
+}

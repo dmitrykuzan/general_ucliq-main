@@ -1,0 +1,153 @@
+.testimonials {
+  position: relative;
+  height: 130vh;
+
+  @media (max-width: em(992)) {
+    height: initial;
+  }
+
+  &__wrapper {
+    @media (min-width: em(993)) {
+      position: sticky;
+      top: 4rem;
+    }
+
+    @media (max-width: em(992)) {
+      position: static;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    @media (max-width: em(576)) {
+      flex-direction: column;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__title-wrap {
+    margin-right: 1.5rem;
+
+    @media (max-width: em(575)) {
+      margin-right: initial;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__subtitle {
+    color: var(--clr-default-200);
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    align-self: end;
+    justify-content: space-between;
+    min-width: 17rem;
+
+    @media (max-width: em(576)) {
+      align-self: initial;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 17rem;
+    }
+  }
+
+  &__pagination {
+    font-size: 1.8rem;
+  }
+
+  &__button-prev,
+  .testimonials__button-next {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/testimonials/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--clr-primary-100);
+    transition: background-color var(--transition), opacity var(--transition);
+
+    &:hover {
+      background-color: var(--clr-primary-400);
+      transition: background-color var(--transition);
+    }
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.3;
+    transition: opacity var(--transition);
+    pointer-events: none;
+  }
+
+  &__button-prev {
+    transform: rotate(-180deg);
+  }
+
+  &__bottom {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+    @media (max-width: em(576)) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__slider {
+    padding-left: calc((100% - 117rem) / 2);
+  }
+
+  &__slide {
+    border: 2px solid var(--clr-default-200);
+    border-radius: 2.4rem;
+    padding: 4rem;
+    height: auto;
+
+    @media (max-width: em(576)) {
+      padding: 2rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  &__img {
+    max-width: 5.6rem;
+    img {
+      border-radius: 0.4rem;
+    }
+  }
+
+  &__person {
+    margin-left: 2rem;
+  }
+
+  &__name {
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__spec {
+    color: var(--clr-default-200);
+  }
+
+  &__review {
+    p {
+      line-height: 150%;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      @include("../ui/logo.html") @include("../ui/menu.html")
+      <div class="header__lang">
+        <div class="header__lang--current">
+          <div class="header__lang-img">
+            <img
+              src="img/langs/en.svg"
+              width="30"
+              height="20"
+              alt="flag of USA"
+            />
+          </div>
+          <span>EN</span>
+        </div>
+        <ul class="header__lang-dropdown">
+          <li class="header__lang-dropdown-item">
+            <a href="#">
+              <div class="header__lang-img">
+                <img
+                  src="img/langs/es.svg"
+                  width="30"
+                  height="20"
+                  alt="flag of USA"
+                />
+              </div>
+              <span>ES</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div data-da="menu,last,767" class="header__buttons">
+        <button class="header__sub modal-join">Subscribe</button>
+        <button class="header__free modal-register">Demo</button>
+      </div>
+      @include("../ui/burger.html")
+    </div>
+  </div>
+</header>

@@ -1,0 +1,150 @@
+<section class="contact section" id="contacts">
+  <div class="container">
+    <h2 class="contact__title title">Contacts</h2>
+    <div class="contact__wrapper">
+      <form class="contact__form">
+        <h3 class="contact__form-title">Let’s Start a Conversation</h3>
+
+        <div class="contact__form-input">
+          <input
+            class="contact__name contact__form-name"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="contact__form-input">
+          <input
+            class="contact__mail contact__form-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="contact__form-input">
+          <textarea
+            class="contact__textarea contact__form-message"
+            name="message"
+            placeholder="Message"
+            type="resize: none;"
+          ></textarea>
+        </div>
+
+        <div class="contact__policy">
+          <label class="contact__check contact__option">
+            <input
+              class="contact__input contact__form-checkbox"
+              type="checkbox"
+              name="terms"
+              checked
+            />
+            <span class="contact__box"> </span>
+            <span class="contact__policy-text">
+              By clicking here you are agreeing to our GDPR data processing
+              policy which can be found
+              <a href="index.html" target="_blank">here</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="contact__submit main__btn" type="submit">
+          Send message
+        </button>
+        <button
+          type="button"
+          class="visually-hidden btn--hide modal-thanks"
+        ></button>
+        <p class="modal__form-status modal__form-status--error">
+          Something went wrong! Try again once.
+        </p>
+        <p class="modal__form-status modal__form-status--valid">
+          Something went wrong with validation! Try again once.
+        </p>
+      </form>
+      <div class="contact__thanks">
+        <p class="thanks__title title">Thanks</p>
+        <p class="thanks__subtitle">
+          All went well. Please check your inbox, we sent you a message. If it’s
+          not in your regular inbox - take a look at the spam folder, sometimes
+          it lands up there.
+        </p>
+      </div>
+
+      <div class="contact__info">
+        <div class="contact__phone">
+          <p>Phone</p>
+          <a href="tel:+971588940969">+97 158 894 09 69</a>
+        </div>
+        <div class="contact__mail-left">
+          <p>Email</p>
+          <a href="mailto:Ucliq@mail"> Ucliq@mail</a>
+        </div>
+
+        <div class="contact__social">
+          <p>Social media</p>
+          <ul class="footer__icons contact__icons">
+            <li class="footer__icon">
+              <a href="https://www.facebook.com/Ucliq.official" target="_blank">
+                <svg>
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__icon">
+              <a href="https://www.instagram.com/ucliq_com/" target="_blank">
+                <svg>
+                  <use xlink:href="img/sprite.svg#inst"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__icon">
+              <a href="https://twitter.com/Ucliq_com" target="_blank">
+                <svg>
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__icon">
+              <a
+                href="https://www.linkedin.com/company/ucliq-com"
+                target="_blank"
+              >
+                <svg>
+                  <use xlink:href="img/sprite.svg#in"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__icon">
+              <a href="mailto:contact@ucliq.com" target="_blank">
+                <svg
+                  width="49"
+                  height="48"
+                  viewBox="0 0 49 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="0.744141" width="48" height="48" rx="24" />
+                  <path
+                    d="M25.5184 26.6901C25.3414 26.8128 25.1326 26.8741 24.9239 26.8741C24.7151 26.8741 24.5065 26.8128 24.3294 26.6901L15.8767 20.8279L13.8663 19.4337L13.8662 32.8951C13.8663 33.4202 14.3163 33.8459 14.8715 33.8459L34.9763 33.8458C35.5316 33.8458 35.9816 33.4201 35.9816 32.8951V19.4336L33.971 20.8279L25.5184 26.6901Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M24.9235 24.7445L34.6467 18.001L15.2002 18.001L24.9235 24.7445Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__icon">
+              <a href="#" target="_blank">
+                <svg>
+                  <use xlink:href="img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

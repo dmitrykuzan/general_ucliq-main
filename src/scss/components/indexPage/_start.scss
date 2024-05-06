@@ -1,0 +1,176 @@
+.start {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20rem;
+  background-color: var(--clr-primary-400);
+
+  @media (max-width: em(992)) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width: em(575)) {
+    margin-top: 5rem;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 51rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/start/bg.svg);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (max-width: em(1200)) {
+        left: initial;
+        right: -15.5rem;
+        background-image: url(../img/start/bg-mobile.svg);
+      }
+
+      @media (max-width: em(992)) {
+        right: -5.4rem;
+      }
+
+      @media (max-width: em(575)) {
+        right: -1.5rem;
+      }
+    }
+
+    @media (max-width: em(1200)) {
+      padding-bottom: 22rem;
+    }
+
+    @media (max-width: em(768)) {
+      padding-bottom: 33rem;
+    }
+
+    @media (max-width: em(575)) {
+      padding-bottom: 30rem;
+    }
+
+    @media (max-width: em(450)) {
+      padding-bottom: 22rem;
+    }
+  }
+
+  &__title {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    max-width: 43rem;
+    color: var(--clr-default-100);
+
+    @media (max-width: em(1200)) {
+      max-width: initial;
+    }
+
+    @media (max-width: em(575)) {
+      padding-top: 5rem;
+    }
+  }
+
+  &__content {
+    @media (max-width: em(1200)) {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: em(1200)) {
+      align-self: baseline;
+    }
+
+    @media (max-width: em(575)) {
+      margin: 0 auto;
+      min-width: 100%;
+    }
+  }
+
+  &__items {
+    @media (max-width: em(1200)) {
+      list-style: decimal;
+      margin-left: 2rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    max-width: 22rem;
+    font-size: 2rem;
+    color: var(--clr-default-100);
+
+    &:first-child {
+      left: 0;
+      top: 52.5rem;
+    }
+
+    &:nth-child(2) {
+      left: 23.2rem;
+      top: 46.5rem;
+    }
+
+    &:nth-child(3) {
+      left: 49.2rem;
+      top: 43.5rem;
+    }
+
+    &:nth-child(4) {
+      left: 73.2rem;
+      top: 38.5rem;
+    }
+
+    &:last-child {
+      left: 96.2rem;
+      top: 34.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: -80px;
+        top: -300px;
+        width: 39rem;
+        height: 39rem;
+        background-image: url(../img/start/prise.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @media (max-width: em(1200)) {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: em(1200)) {
+      position: initial;
+      margin: 0 auto;
+      max-width: initial;
+      font-size: 1.8rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__particles {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

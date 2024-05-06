@@ -1,0 +1,83 @@
+.seen {
+  margin-bottom: 20rem;
+  height: 80vh;
+
+  @media (max-width: em(992)) {
+    margin-bottom: 10rem;
+    height: initial;
+  }
+
+  @media (max-width: em(575)) {
+    margin-bottom: 5rem;
+  }
+
+  .container {
+    @media (min-width: em(993)) {
+      position: sticky;
+      top: 4rem;
+    }
+
+    @media (max-width: em(992)) {
+      position: static;
+    }
+  }
+
+  &__title {
+    padding-bottom: 6rem;
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: em(992)) {
+      grid-gap: 1.5rem;
+    }
+
+    @media (max-width: em(768)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: em(575)) {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    border-radius: 1.2rem;
+    min-height: 15rem;
+    max-width: 39rem;
+    box-shadow: 1px 1px 25px rgba(70, 70, 70, 0.06);
+
+    @media (max-width: em(575)) {
+      max-width: initial;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &:hover img {
+      opacity: initial;
+      transition: opacity var(--transition);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 100%;
+    }
+
+    img {
+      opacity: 0.55;
+      transition: opacity var(--transition);
+
+      @media (max-width: em(575)) {
+        opacity: initial;
+      }
+    }
+  }
+}

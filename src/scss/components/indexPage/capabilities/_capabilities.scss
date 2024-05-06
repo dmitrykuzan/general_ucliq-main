@@ -1,0 +1,237 @@
+.capabilities {
+  &__title {
+    padding-bottom: 8rem;
+
+    @media (max-width: em(992)) {
+      padding-bottom: 6rem;
+    }
+
+    @media (max-width: em(575)) {
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    @media (max-width: em(767)) {
+      flex-direction: column;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 3rem;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      .capabilities__info {
+        margin-left: initial;
+
+        @media (max-width: em(1200)) {
+          margin-right: 4rem;
+        }
+        @media (max-width: em(767)) {
+          margin-right: initial;
+        }
+
+        @media (max-width: em(575)) {
+          margin-right: initial;
+        }
+
+        &::before {
+          left: initial;
+          right: -2.4rem;
+          transform: scale(-1, 1);
+
+          @media (max-width: em(767)) {
+            left: 50%;
+            right: initial;
+            transform: rotate(89deg);
+          }
+        }
+      }
+
+      .capabilities__image {
+        margin-right: initial;
+        margin-left: 5rem;
+
+        @media (max-width: em(1200)) {
+          margin-left: initial;
+        }
+      }
+
+      .capabilities__info-title {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &__image {
+    margin-right: 5rem;
+    max-width: 22rem;
+
+    @media (max-width: em(1200)) {
+      flex-shrink: 0;
+      margin-right: initial;
+    }
+
+    @media (max-width: em(767)) {
+      flex-shrink: initial;
+    }
+
+    @media (max-width: em(992)) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__info {
+    position: relative;
+    border: solid 0.2rem #D9D9D9;
+    border-radius: 2.4rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    min-width: 87rem;
+    background-color: #F2F2F2;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2.4rem;
+      top: 11.7rem;
+      width: 2.4rem;
+      height: 4.5rem;
+      background-image: url(../img/capabilities/decor.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (max-width: em(767)) {
+        left: 50%;
+        top: -3.9rem;
+        width: 1.8rem;
+        height: 6rem;
+        transform: rotate(89deg);
+      }
+    }
+
+    @media (max-width: em(1200)) {
+      margin-left: 4rem;
+      min-width: initial;
+    }
+
+    @media (max-width: em(767)) {
+      margin-left: initial;
+    }
+
+    @media (max-width: em(575)) {
+      margin-left: initial;
+      padding-top: 2rem;
+      padding-right: 1.5rem;
+      padding-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 3rem;
+    max-width: 70rem;
+    font-weight: 600;
+    font-size: fluid-font(3.6rem, 2rem);
+    line-height: 135%;
+    letter-spacing: -2px;
+
+    @media (max-width: em(1200)) {
+      max-width: initial;
+    }
+  }
+
+  &__info-text {
+    max-width: 77rem;
+
+    p {
+      font-weight: 500;
+      font-size: fluid-font(2rem, 1.8rem);
+      line-height: 120%;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__info-list {
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    max-width: 81rem;
+
+    @media (max-width: em(1200)) {
+      display: block;
+      grid-gap: initial;
+      max-width: initial;
+    }
+  }
+
+  &__info-item {
+    position: relative;
+    padding-left: 4rem;
+    font-weight: 600;
+    font-size: fluid-font(2rem, 1.6rem);
+
+    &::before {
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-image: url(../img/capabilities/item-decor.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: em(1200)) {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    @media (max-width: em(575)) {
+      padding-left: 2rem;
+
+      &:before {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 10rem;
+    max-width: 80rem;
+    font-weight: 500;
+    font-size: fluid-font(2rem, 1.8rem);
+    line-height: 120%;
+
+    p:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: em(1200)) {
+      margin-bottom: 5rem;
+      max-width: initial;
+    }
+
+    @media (max-width: em(575)) {
+      margin-bottom: 3rem;
+    }
+  }
+}

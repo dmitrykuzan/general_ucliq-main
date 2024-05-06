@@ -1,0 +1,110 @@
+.ceo {
+  margin-top: 20rem;
+  background-color: var(--clr-primary-200);
+
+  @media (max-width: em(992)) {
+    margin-top: 9rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    color: var(--clr-default-100);
+
+    @media (max-width: em(992)) {
+      flex-direction: column;
+    }
+
+    @media (max-width: em(575)) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 8rem;
+      height: 8rem;
+      background-image: url(../img/ceo/quotes.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (max-width: em(575)) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    &::before {
+      left: 0;
+      top: -4rem;
+
+      @media (max-width: em(575)) {
+        top: -2rem;
+      }
+    }
+
+    &::after {
+      right: 26rem;
+      bottom: -4rem;
+      transform: scale(-1, 1);
+
+      @media (max-width: em(575)) {
+        bottom: -2rem;
+      }
+
+      @media (max-width: em(1200)) {
+        right: 0;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 4rem;
+    max-width: 23rem;
+
+    @media (max-width: em(992)) {
+      margin-right: auto;
+      margin-bottom: 3rem;
+      margin-left: auto;
+    }
+  }
+
+  &__text {
+    max-width: 62rem;
+
+    @media (max-width: em(992)) {
+      max-width: initial;
+    }
+  }
+
+  &__title {
+    padding-bottom: 2.4rem;
+    font-size: fluid-font(3.6rem, 2.8rem);
+
+    @media (max-width: em(992)) {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    padding-bottom: 1rem;
+    line-height: 150%;
+    letter-spacing: -0.3px;
+
+    span {
+      font-weight: 600;
+      font-size: 2.5rem;
+      color: var(--clr-primary-500);
+    }
+  }
+
+  &__name {
+    padding-right: 2rem;
+    font-weight: 600;
+    text-align: right;
+  }
+}

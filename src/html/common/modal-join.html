@@ -1,0 +1,70 @@
+<div class="modal modal--join">
+  <div class="modal__wrapper">
+    <div class="modal__form-wrapper join__wrapper">
+      <div class="modal__content modal__register-content">
+        <button
+          class="modal__close"
+          aria-label="Закрыть модальное окно"
+        ></button>
+        <!-- onsubmit="return false;" нужно убрать, я добавил его чтобы убрать обновление страницы-->
+        <form class="modal__form modal__join">
+          <h2 class="modal__title title join__title">
+            Join the world of pro’s
+          </h2>
+          <h3 class="modal__subtitle">
+            We are working on a highly applicable content that will navigate you
+            through the world of partner marketing and will keep you up to date.
+            Subscribe to never miss it, and you know, just become friend of ours
+            ✌🏻
+          </h3>
+
+          <div class="modal__input-wrapper">
+            <input
+              class="modal__name modal__input modal__join-name"
+              type="text"
+              name="firstName"
+              placeholder="Your name"
+            />
+          </div>
+
+          <div class="modal__input-wrapper">
+            <input
+              class="modal__mail modal__input modal__join-email"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div class="modal__policy">
+            <label class="contact__check contact__option">
+              <input
+                class="contact__input modal__join-checkbox"
+                type="checkbox"
+                name="terms"
+              />
+              <span class="contact__box"></span>
+              <span class="contact__policy-text">
+                By clicking here you are agreeing to our GDPR data processing
+                policy which can be found <a href="#" target="_blank">here</a>
+              </span>
+            </label>
+          </div>
+
+          <!-- <button class="modal__submit main__btn modal-spam">Subcribe</button> -->
+          <button class="modal__submit main__btn">Subscribe</button>
+          <button
+            type="button"
+            class="visually-hidden btn--hide modal-spam"
+          ></button>
+          <p class="modal__form-status modal__form-status--error">
+            Something went wrong! Try again once.
+          </p>
+          <p class="modal__form-status modal__form-status--valid">
+            Something went wrong with validation! Try again once.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
